@@ -1,0 +1,373 @@
+.registration-form {
+  width: 100%;
+  max-width: 1000px;
+  margin: 25px auto;
+  padding: 35px;
+  font-size: 15px;
+  background: #ffffff;
+  border: 1px solid #ede9fe;
+  border-radius: 18px;
+  box-shadow: 0 8px 25px #6d28d910;
+}
+
+.form-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #ede9fe;
+  text-align: left;
+}
+
+.form-label {
+  color: #8b5cf6;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.form-heading h2 {
+  color: #1e1b4b;
+  font-size: 27px;
+  margin: 10px 0;
+}
+
+.form-heading p {
+  color: #64748b;
+}
+
+.form-heading-icon {
+  display: grid;
+  width: 58px;
+  height: 58px;
+  flex: 0 0 58px;
+  place-items: center;
+  border-radius: 16px;
+  background: linear-gradient(145deg, #f5f3ff 0%, #ddd6fe 100%);
+  color: #6d28d9;
+  box-shadow:
+    0 8px 18px #6d28d91f,
+    inset 0 0 0 1px #c4b5fd,
+    inset 0 0 0 4px #ffffff80;
+}
+
+.form-heading-icon svg,
+.photo-preview svg,
+.upload-button svg {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.7;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.form-heading-icon svg {
+  width: 32px;
+  height: 32px;
+}
+
+.photo-upload-section {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  margin: 24px 0;
+  padding: 24px;
+  border: 1px solid #e4dcff;
+  border-radius: 16px;
+  background: linear-gradient(135deg, #ffffff 0%, #f5f3ff 100%);
+  box-shadow: 0 8px 20px #6d28d90a;
+}
+
+.photo-preview {
+  width: 136px;
+  height: 136px;
+  border-radius: 50%;
+  background: #f5f3ff;
+  border: 4px solid #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  flex-shrink: 0;
+  box-shadow: 0 0 0 1px #ddd6fe, 0 10px 24px #6d28d91f;
+}
+
+.photo-preview span {
+  display: grid;
+  width: 88px;
+  height: 88px;
+  place-items: center;
+  border-radius: 50%;
+  background: linear-gradient(145deg, #ede9fe 0%, #ddd6fe 100%);
+  color: #6d28d9;
+  box-shadow: inset 0 0 0 1px #c4b5fd;
+}
+
+.photo-preview span svg {
+  width: 62px;
+  height: 62px;
+  fill: currentColor;
+  stroke: none;
+}
+
+.photo-preview img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.photo-upload-info h3 {
+  color: #1e1b4b;
+  margin-bottom: 7px;
+}
+
+.photo-upload-info p {
+  color: #64748b;
+  font-size: 13px;
+  margin-bottom: 12px;
+}
+
+.photo-upload-info .photo-error {
+  margin: 8px 0 0;
+  color: #b91c1c;
+}
+
+.upload-button {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  width: fit-content;
+  background: #6d28d9;
+  color: #ffffff;
+  padding: 11px 17px;
+  border-radius: 10px;
+  font-size: 13px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 5px 12px #6d28d926;
+  transition: background 0.2s, box-shadow 0.2s, transform 0.2s;
+}
+
+.upload-button:hover {
+  background: #5b21b6;
+  box-shadow: 0 7px 16px #6d28d933;
+  transform: translateY(-1px);
+}
+
+.upload-button svg {
+  width: 20px;
+  height: 20px;
+  flex: 0 0 20px;
+}
+
+.registration-form .upload-button input[type="file"] {
+  display: none !important;
+}
+
+.upload-button input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.upload-button:focus-within {
+  outline: 2px solid #8b5cf6;
+  outline-offset: 3px;
+}
+
+.form-section {
+  padding: 25px 0;
+  border-bottom: 1px solid #ede9fe;
+}
+
+.form-section-title {
+  color: #1e1b4b;
+  font-size: 18px;
+  margin: 0 0 22px;
+  text-align: left;
+}
+
+.form-section-title span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  border-radius: 8px;
+  background: #ede9fe;
+  color: #6d28d9;
+  font-size: 13px;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.form-group label {
+  color: #334155;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.form-group small {
+  color: #64748b;
+  font-size: 12px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 13px;
+  border: 1px solid #ddd6fe;
+  border-radius: 8px;
+  outline: none;
+  background: #ffffff;
+  color: #1e1b4b;
+  font-size: 14px;
+  font-family: inherit;
+}
+
+.form-group input[readonly] {
+  background: #f5f3ff;
+  color: #5b21b6;
+  font-weight: 700;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: #8b5cf6;
+  box-shadow: 0 0 0 3px #8b5cf620;
+}
+
+.form-group textarea {
+  resize: vertical;
+}
+
+.full-width {
+  grid-column: 1 / -1;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding-top: 25px;
+}
+
+.form-validation-error,
+.registration-feedback {
+  margin: 16px 0;
+  padding: 12px 15px;
+  border: 1px solid;
+  border-radius: 9px;
+  font-size: 14px;
+}
+
+.form-validation-error,
+.registration-feedback--error {
+  border-color: #fecdd3;
+  background: #fff1f2;
+  color: #9f1239;
+}
+
+.registration-feedback--success {
+  border-color: #bbf7d0;
+  background: #f0fdf4;
+  color: #166534;
+}
+
+.form-actions button {
+  padding: 13px 22px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.registration-form .submit-button {
+  background: #6d28d9;
+  color: white;
+}
+
+.registration-form .submit-button:hover {
+  background: #5b21b6;
+}
+
+.registration-form .clear-button {
+  background: #ede9fe;
+  color: #6d28d9;
+}
+
+.registration-form .clear-button:hover {
+  background: #ddd6fe;
+}
+
+.registration-form .cancel-button {
+  background: #f1f5f9;
+  color: #334155;
+}
+
+.registration-form .cancel-button:hover {
+  background: #e2e8f0;
+}
+
+@media (max-width: 650px) {
+  .registration-form {
+    padding: 20px;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .full-width {
+    grid-column: auto;
+  }
+
+  .form-heading h2 {
+    font-size: 21px;
+  }
+
+  .form-heading-icon {
+    font-size: 38px;
+  }
+
+  .photo-upload-section {
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .photo-preview {
+    width: 116px;
+    height: 116px;
+  }
+
+  .form-actions {
+    flex-direction: column;
+  }
+
+  .form-actions button {
+    width: 100%;
+  }
+}

@@ -1,0 +1,228 @@
+
+.navbar {
+  width: 100%;
+  height: 76px;
+  padding: 0 32px;
+  position: relative;
+  background: white;
+  color: #1e1b4b;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #e9d5ff;
+  box-shadow: 0 3px 12px rgba(30, 27, 75, 0.06);
+  z-index: 10;
+}
+
+.navbar-brand h2 {
+  color: #6d28d9;
+  font-size: 25px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+}
+
+.navbar-links a,
+.navbar-links button {
+  display: inline-block;
+  padding: 10px 4px;
+  border: 0;
+  background: transparent;
+  color: #475569;
+  font: inherit;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.navbar-links a:hover,
+.navbar-links button:hover {
+  color: #7c3aed;
+}
+
+.navbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.navbar-notification-button {
+  position: relative;
+  display: grid;
+  width: 40px;
+  height: 40px;
+  place-items: center;
+  border: 0;
+  border-radius: 12px;
+  background: transparent;
+  color: #475569;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+.navbar-notification-button:hover {
+  background: #f5f3ff;
+  color: #6d28d9;
+}
+
+.navbar-notification-button:focus-visible,
+.navbar-account-button:focus-visible,
+.navbar-account-menu button:focus-visible {
+  outline: 2px solid #8b5cf6;
+  outline-offset: 3px;
+}
+
+.navbar-notification-button svg {
+  width: 21px;
+  height: 21px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.navbar-notification-count {
+  position: absolute;
+  top: 0;
+  right: 0;
+  min-width: 17px;
+  height: 17px;
+  padding: 0 4px;
+  border: 2px solid #ffffff;
+  border-radius: 999px;
+  background: #dc2626;
+  color: #ffffff;
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 13px;
+  text-align: center;
+}
+
+.navbar-account {
+  position: relative;
+}
+
+.navbar-account-button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 4px;
+  border: 0;
+  border-radius: 12px;
+  background: transparent;
+  color: #1e1b4b;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.navbar-account-button:hover {
+  background: #f8f7ff;
+}
+
+.navbar-account-chevron {
+  width: 16px;
+  height: 16px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.navbar-account-menu {
+  position: absolute;
+  top: calc(100% + 12px);
+  right: 0;
+  z-index: 20;
+  width: 220px;
+  padding: 16px;
+  border: 1px solid #ede9fe;
+  border-radius: 14px;
+  background: #ffffff;
+  box-shadow: 0 12px 30px #1e1b4b1f;
+}
+
+.navbar-account-menu p {
+  margin: 0 0 4px;
+  color: #1e1b4b;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.navbar-account-menu > span {
+  display: block;
+  margin-bottom: 14px;
+  color: #64748b;
+  font-size: 12px;
+  text-transform: capitalize;
+}
+
+.navbar-account-menu button {
+  width: 100%;
+  padding: 9px 10px;
+  border: 0;
+  border-radius: 8px;
+  background: #f5f3ff;
+  color: #6d28d9;
+  font: inherit;
+  font-size: 13px;
+  font-weight: 600;
+  text-align: left;
+  cursor: pointer;
+}
+
+.navbar-account-menu button:hover {
+  background: #ede9fe;
+}
+
+.admin-avatar {
+  display: grid;
+  width: 36px;
+  height: 36px;
+  place-items: center;
+  border-radius: 50%;
+  background: #ede9fe;
+  color: #6d28d9;
+  font-weight: bold;
+}
+
+@media (max-width: 650px) {
+  .navbar {
+    height: auto;
+    min-height: 76px;
+    padding: 15px;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .navbar-links {
+    gap: 15px;
+    flex-wrap: wrap;
+    order: 3;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .navbar-brand h2 {
+    font-size: 20px;
+  }
+
+  .navbar-actions {
+    margin-left: auto;
+    gap: 8px;
+  }
+}

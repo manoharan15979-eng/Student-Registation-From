@@ -1,0 +1,144 @@
+
+.student-table {
+  width: 100%;
+  overflow-x: auto;
+  border: 1px solid #ede9fe;
+  border-radius: 14px;
+  background: #ffffff;
+  box-shadow: 0 5px 18px #6d28d910;
+}
+
+.student-table table {
+  width: 100%;
+  min-width: 900px;
+  border-collapse: collapse;
+  background: white;
+}
+
+.student-table th,
+.student-table td {
+  padding: 14px 16px;
+  border-bottom: 1px solid #ede9fe;
+  text-align: left;
+}
+
+.student-table th {
+  background: #f5f3ff;
+  color: #5b21b6;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.student-table td {
+  color: #334155;
+  font-size: 14px;
+}
+
+.student-table tbody tr:last-child td {
+  border-bottom: 0;
+}
+
+.student-table tbody tr:hover {
+  background: #faf8ff;
+}
+
+.student-name-cell {
+  display: flex;
+  min-width: 170px;
+  align-items: center;
+  gap: 10px;
+  color: #1e1b4b;
+  font-weight: 600;
+}
+
+.student-name-cell img,
+.student-table-avatar {
+  display: grid;
+  width: 34px;
+  height: 34px;
+  flex: 0 0 34px;
+  place-items: center;
+  border-radius: 50%;
+  background: #ede9fe;
+  color: #6d28d9;
+  object-fit: cover;
+  font-size: 16px;
+}
+
+.student-table-actions {
+  display: flex;
+  gap: 5px;
+}
+
+.student-table button {
+  padding: 7px 10px;
+  border: 0;
+  border-radius: 7px;
+  color: white;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+.student-table button:hover {
+  transform: translateY(-1px);
+}
+
+.student-table button.view-action {
+  background: #ede9fe;
+  color: #5b21b6;
+}
+
+.student-table button.view-action:hover {
+  background: #ddd6fe;
+}
+
+.student-table button.edit-action {
+  background: #6d28d9;
+}
+
+.student-table button.edit-action:hover {
+  background: #5b21b6;
+}
+
+.student-table button.delete-action {
+  background: #be123c;
+}
+
+.student-table button.delete-action:hover {
+  background: #9f1239;
+}
+
+.student-table-empty {
+  display: grid;
+  justify-items: center;
+  gap: 8px;
+  padding: 48px 20px;
+  border: 1px dashed #c4b5fd;
+  border-radius: 14px;
+  background: #ffffff;
+  color: #64748b;
+  text-align: center;
+}
+
+.student-table-empty > span {
+  font-size: 32px;
+}
+
+.student-table-empty h2 {
+  color: #4c1d95;
+  font-size: 18px;
+}
+
+.student-table-empty p {
+  font-size: 14px;
+}
+
+@media (max-width: 650px) {
+  .student-table {
+    border-radius: 10px;
+  }
+}

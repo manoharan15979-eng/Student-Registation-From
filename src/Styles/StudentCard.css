@@ -1,0 +1,30 @@
+
+.student-card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 3px 12px #00000015;
+  text-align: center;
+}
+
+.student-card img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.student-card h3 {
+  color: #172554;
+}
+
+.student-card p {
+  color: #64748b;
+}
+
+.student-card span {
+  background: #dcfce7;
+  color: #15803d;
+  padding: 5px 12px;
+  border-radius: 15px;
+}
